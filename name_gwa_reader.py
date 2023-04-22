@@ -17,7 +17,9 @@ def name_gwa():
                 # Get the GWA
                 gwa = lines[1].strip()
                 # Convert the GWA into integer
-# Append the name and dictionary on the created dictionary
+                gwa = int(gwa)
+            # Append the name and dictionary on the created dictionary
+            student_dict[name] = gwa
 # Print student's name and GWA
 
 # To print the student who got highest score,
