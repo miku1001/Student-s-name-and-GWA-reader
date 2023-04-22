@@ -1,7 +1,7 @@
 # Write a Python program that read a file containing the name of 20 students together 
 # with their GWA. The program will outputs the name of the student who got the highest GWA (including the GWA).
 
-def name_gwa():
+def student():
     # Open student_name_and_gwa.txt(read)
     with open("student_name_and_gwa.txt") as grades:
         # Create an empty dictionary to put gathered name and their GWA
@@ -16,13 +16,17 @@ def name_gwa():
                 name = lines[0]
                 # Get the GWA
                 gwa = lines[1].strip()
-                # Convert the GWA into integer
-                gwa = int(gwa)
-            # Append the name and dictionary on the created dictionary
-            student_dict[name] = gwa
-# Print student's name and GWA
+                # Convert the GWA into int
+                gwa_int = int(gwa)
+                # Append the name and dictionary on the created dictionary
+                student_dict[name] = gwa_int
+                # Print student's name and GWA
+                print(f"Student's name: {name:<10s} GWA: {gwa_int:>1.5f}")
 
 # To print the student who got highest score,
 # Create a list where you'll put the name of highest student
 # Get the highest GWA
 # Get the name of student
+
+# start
+student()
