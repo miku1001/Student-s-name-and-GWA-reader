@@ -23,9 +23,12 @@ def student():
                 # Print student's name and GWA
                 print(f"Student's name: {name:<10s} GWA: {gwa_int:>1.5f}")
 
-# To print the student who got highest score,
-# Create a list where you'll put the name of highest student
-# Get the highest GWA
+    # To print the student who got highest score,
+    # Create a list where you'll put the name of highest student
+    highest = []
+    for name in student_dict.items():
+        # Get the highest GWA
+        high = max(student_dict.values())
 # Get the name of student
 
 # start
