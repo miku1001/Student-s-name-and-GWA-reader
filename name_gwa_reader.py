@@ -4,9 +4,11 @@
 def name_gwa():
     # Open student_name_and_gwa.txt(read)
     with open("student_name_and_gwa.txt") as grades:
-# Create an empty dictionary to put gathered name and their GWA
-# Read every lines in file
-# Split every lines in 2 parts to get the name and GWA
+        # Create an empty dictionary to put gathered name and their GWA
+        student_dict = {}
+        # Read every lines in file
+        for lines in grades:
+        # Split every lines in 2 parts to get the name and GWA
 # Extract the GWA and name from splitted line
 # Convert the GWA into integer
 # Append the name and dictionary on the created dictionary
