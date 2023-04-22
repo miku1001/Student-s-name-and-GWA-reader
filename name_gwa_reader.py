@@ -26,10 +26,12 @@ def student():
     # To print the student who got highest score,
     # Create a list where you'll put the name of highest student
     highest = []
-    for name in student_dict.items():
+    for name, gwa in student_dict.items():
         # Get the highest GWA
         high = max(student_dict.values())
-# Get the name of student
-
+        # Get the name of student
+        if gwa == high:
+            highest.append(name)
+    
 # start
 student()
