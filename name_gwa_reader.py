@@ -8,9 +8,15 @@ def name_gwa():
         student_dict = {}
         # Read every lines in file
         for lines in grades:
-        # Split every lines in 2 parts to get the name and GWA
-# Extract the GWA and name from splitted line
-# Convert the GWA into integer
+            # Split every lines in 2 parts to get the name and GWA
+            lines = lines.split(", ")
+            # Extract the GWA and name from splitted line
+            if len(lines) == 2:
+                # Get the name
+                name = lines[0]
+                # Get the GWA
+                gwa = lines[1].strip()
+                # Convert the GWA into integer
 # Append the name and dictionary on the created dictionary
 # Print student's name and GWA
 
