@@ -16,8 +16,8 @@ def student():
                 name = lines[0]
                 # Get the GWA
                 gwa = lines[1].strip()
-                # Convert the GWA into int
-                gwa_int = int(gwa)
+                # Convert the GWA into float
+                gwa_int = float(gwa)
                 # Append the name and dictionary on the created dictionary
                 student_dict[name] = gwa_int
                 # Print student's name and GWA
@@ -28,7 +28,7 @@ def student():
     highest_name = []
     for name, gwa in student_dict.items():
         # Get the highest GWA
-        high = max(student_dict.values())
+        high = min(student_dict.values())
         # Get the name of student
         if gwa == high:
             highest_name.append(name)
