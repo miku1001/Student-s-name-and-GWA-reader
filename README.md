@@ -28,7 +28,7 @@ To run this program, you need to:
 3. Import the program in your IDE by selecting the cloned repository as the program directory to import the code.
 4. Run the program.
    
-    **Usage** <img align="right" width="350" height="150" src="https://user-images.githubusercontent.com/129582383/233836885-a84da4b5-a4ae-44db-9afe-5c893c006d5c.png">
+    **Usage** <img align="right" width="300" height="150" src="https://user-images.githubusercontent.com/129582383/233839707-507a8946-f7cd-422e-ab1f-988836b1fc79.png">
     1. Start the program to show the list of student's name and grade.
 
 ### Contact☎️ <a name="contact"></a>
